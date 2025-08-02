@@ -1,9 +1,11 @@
-pub mod video;
-pub mod http;
-pub mod config;
-pub mod error;
+// Domain-Driven Design Structure
+pub mod domain;
+pub mod application;
+pub mod infrastructure;
+pub mod shared;
 
-pub use video::*;
-pub use http::*;
-pub use config::*;
-pub use error::*; 
+// Re-export main types for convenience
+pub use domain::video::*;
+pub use application::services::*;
+pub use infrastructure::http::*;
+pub use shared::config::*; 

@@ -1,1 +1,8 @@
 /target
+Cargo.lock
+assets/output/
+*.mp4
+*.webm
+*.avi
+*.mov
+.env

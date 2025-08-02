@@ -1,9 +1,12 @@
 [package]
 name = "video_streaming_api"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
-actix-web = "4.0"
-tokio = { version = "1", features = ["full"] }
+actix-web = "4.11.0"
+tokio = { version = "1.0", features = ["full"] }
+
+[dev-dependencies]
+tokio = { version = "1.0", features = ["full", "test-util"] }
 
